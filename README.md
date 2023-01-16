@@ -1,4 +1,5 @@
 # binance-app
+You can check the app here [Click Me](https://cryptocurrency-wallet-six.vercel.app/)
 
 ## Project setup
 ```
