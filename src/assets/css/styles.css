@@ -1,0 +1,248 @@
+/* google font - roboto CDN */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  overflow: hidden;
+}
+/* App */
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+/* Container */
+.container {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* Nav */
+nav {
+  width: 100%;
+  border-bottom: 2px solid #000;
+  padding: 10px 0px;
+  display: flex;
+}
+nav > div + div {
+  margin-left: 10px;
+}
+/* Main */
+main {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  padding: 10px 0px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+main > .area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  overflow: auto;
+  height: 100%;
+}
+.area + .area {
+  border-left: 2px solid #000;
+}
+/*List Area*/
+.list-area {
+  width: 100%;
+  height: 100%;
+}
+.list-area > .list-item {
+  width: 100%;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.list-area > .list-item + .list-item {
+  margin-top: 10px;
+}
+.list-area > .list-item > .list-item-title {
+  flex: 1;
+  margin: 0px 10px 0px 10px;
+}
+.list-item-title > div > i {
+  margin: 0 10px 0 10px;
+}
+.list-area > .list-item > .list-item-body {
+  margin: 0px 10px 0px 10px;
+}
+.list-area > .list-item > .list-item-body input {
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 100px;
+  height: 36px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.list-area > .list-item > .list-item-actions {
+  margin: 0px 10px 0px 10px;
+  width: 16%;
+  display: flex;
+}
+.list-area > .list-item > .list-item-actions .btn {
+  padding: 0 5px 0 5px;
+  height: 36px;
+}
+.list-area > .list-item > .list-item-actions .btn + .btn {
+  margin-left: 10px;
+}
+/* Btn */
+.btn {
+  padding: 12px 24px 12px 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 1px solid #000;
+}
+.btn-block {
+  flex: 1;
+  width: 100%;
+}
+.btn-primary {
+  background-color: #106ee9;
+  border-color: #0d58ba;
+  color: white;
+}
+.btn-success {
+  background-color: #0cdd77;
+  border-color: #0ab15f;
+}
+.btn-danger {
+  background-color: #f91a1e;
+  border-color: #c71518;
+}
+.btn-info {
+  background-color: #748ddd;
+  border-color: #5d71b1;
+}
+.btn-primary-soft {
+  background-color: #106ee9;
+  border-color: #106ee9;
+  color: white;
+}
+.btn-success-soft {
+  background-color: #0cdd77;
+  border-color: #0cdd77;
+}
+.btn-danger-soft {
+  background-color: #f8b2ad;
+  border-color: #f91a1e;
+}
+.btn-info-soft {
+  background-color: #9999d2;
+  border-color: #748ddd;
+}
+/*Modal Area*/
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-container {
+  background-color: white;
+  width: 60vw;
+  height: 70vh;
+  border-radius: 10px;
+  border: 1px solid #000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.modal-search {
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+}
+.modal-search > input {
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 10px;
+  height: 50px;
+  padding: 0px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  flex: 1;
+}
+.modal-search > input::placeholder {
+  color: #000;
+}
+.modal-search > button {
+  margin-left: 10px;
+}
+.modal-body {
+  overflow: auto;
+  flex: 1;
+}
+
+.modal-body > .modal-item {
+  width: 100%;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.modal-body > .modal-item + .modal-item {
+  margin-top: 10px;
+}
+.modal-body > .modal-item > .modal-item-title {
+  flex: 1;
+  margin: 0px 10px 0px 10px;
+}
+.modal-item-title > div > i {
+  margin: 0 10px 0 10px;
+}
+.modal-body > .modal-item > .modal-item-body {
+  margin: 0px 10px 0px 10px;
+}
+.modal-body > .modal-item > .modal-item-body input {
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 100px;
+  height: 36px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.modal-body > .modal-item > .modal-item-actions {
+  margin: 0px 10px 0px 10px;
+  width: 16%;
+  display: flex;
+}
+.modal-body > .modal-item > .modal-item-actions .btn {
+  padding: 0 5px 0 5px;
+  height: 36px;
+}
+.modal-body > .modal-item > .modal-item-actions .btn + .btn {
+  margin-left: 10px;
+}
